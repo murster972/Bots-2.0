@@ -1,0 +1,54 @@
+===Description of Program===
+1. bot
+    - use mac as client id
+    - queues
+         - have a FIFO stack (Queue - see Queue module) that stores everything that needs to be uploaded to the database
+         - have a SINGLE thread then contstantly checking the stack for new content
+           and upload to the database
+         - saves a shit
+
+2. masterbot
+    - Listen and connect to clients
+        - listen for clients
+        - recieve mac address from client
+        - create thread to listen for client keep-alive packets
+            - need to be received every 5-secs or client will be disconnected
+    - Respond to UI requests
+        - pull information from database
+            - client resources, commands, command outputs
+            - server resources
+        - send back to UI
+        - receive and send commands to clients (or upload to database)
+
+3. UI
+    - display client info
+        - resources used
+        - commands executed and their outputs
+    - send commands
+        - ability to select multiple clients to send to
+    - display Server info
+        - resources used
+    - ability to edit server configuration
+    - Control Client
+        - keyboard, mouse, monitor
+        - Issue Commands etc.
+    - Update Client with new scripts
+        - Have client pull new scripts from database
+    - :IDEA: Look at websockets for sending/recv req/replies from server
+
+4. Database
+    - Client Table
+    - Command Table
+    - Server Table
+
+===Design of Program===
+---Masters---
+Protocol for finding Clients:
+
+---Client---
+Protocol for connecting to master:
+
+
+---Database---
+
+---UI---

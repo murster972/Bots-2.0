@@ -1,0 +1,125 @@
+/* styles used by index.html */
+
+#MasterBot_info, #commands_and_feed {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* master bot info section */
+#MasterBot_info {
+    width: 750px;
+    height: 190px;
+    margin-top: 20px;
+}
+
+#MasterBot_info #info, #MasterBot_info #resources{
+    height: 100%;
+}
+
+#MasterBot_info #info{
+    width: 45%;
+    height: 165px;
+}
+
+#MasterBot_info #info h1{
+    font-size: 30px;
+}
+
+#MasterBot_info #info h2{
+    font-size: 25px;
+}
+
+#MasterBot_info #resources{
+    display: flex;
+    align-items: center;
+    width: 55%;
+}
+
+#master_bot_ram, #master_bot_cpu {
+    margin-left: 25px;
+}
+
+#master_cpu {
+    background-image: linear-gradient(to right, transparent 50%, #FF6F4B 0);
+}
+
+@keyframes master_cpu {
+  to { transform: rotate(.5turn); }
+}
+
+@keyframes master_ram {
+  to { transform: rotate(.25turn); }
+}
+
+
+#master_cpu::before {
+    /* transform: rotate(.5turn); */
+    animation: master_cpu 0.8s linear forwards;
+}
+
+#master_ram {
+    background-image: linear-gradient(to right, transparent 50%, #27AE60 0);
+}
+
+#master_ram::before {
+    /* transform: rotate(.20turn); */
+    animation: master_ram 0.8s linear forwards;
+}
+
+/* commands and feeds section */
+#commands_and_feed {
+    width: 800px;
+    height: auto;
+    margin-top: 10px;
+}
+
+#commands_and_feed #inputs, #commands_and_feed #buttons {
+    width: 385px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+
+#commands_and_feed #inputs {
+}
+
+#client_input {
+    margin-top: 10px;
+}
+
+#cmd_hist_butn {
+    background: #5F647C;
+    color: #393E53;
+}
+
+#cmd_send_butn {
+    background-color: #000;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#feed_container {
+    width: 100%;
+    height: 230px;
+    background: red;
+    margin-top: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#feed {
+    width: 100%;
+    height: 100%;
+    background: blue;
+}
+
+#feed tr{
+    width: 100%;
+    height: 40px;
+    background-color: #5F647C;
+    border-bottom: 2px solid #333333;
+}

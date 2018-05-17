@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MasterBot Overview</title>
+        <link rel="stylesheet" type="text/css" href="style/shared.css">
+        <link rel="stylesheet" type="text/css" href="style/index.css">
+    </head>
+    <body>
+        <section id="MasterBot_info">
+            <div id="info">
+                <h1>BotMaster Information</h1>
+                <br>
+                <h2>IP: 127.0.0.1</h2>
+                <h2>Port: 1029</h2>
+                <br>
+                <h2>Status: <span class="status good">Active - 2m 3s<span></h2>
+            </div>
+            <div id="resources">
+                <div class="resource_circle" id="master_bot_cpu">
+                    <div class="outer_circle" id="master_cpu">
+                        <div class="inner_circle">
+                            <h1>CPU</h1>
+                            <h2><span class="status okay">50%</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="resource_circle" id="master_bot_ram">
+                    <div class="outer_circle" id="master_ram">
+                        <div class="inner_circle">
+                            <h1>RAM</h1>
+                            <h2><span class="status good">20%</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div id="sep_bar"></div>
+        <section id="commands_and_feed">
+            <div id="inputs">
+                <div class="text_input" id="cmd_input">
+                    <input type="text" placeholder="Command" spellcheck="false">
+                    <div class="text_input_butn">X</div>
+                </div>
+
+                <div class="text_input" id="client_input">
+                    <input type="text" placeholder="Selected Bots" spellcheck="false">
+                    <div class="text_input_butn down"><span class="down_arrow">></span></div>
+                </div>
+
+
+            </div>
+            <div id="buttons">
+                <input type="button" value="Command History" id="cmd_hist_butn">
+                <input type="button" value="Send Command" id="cmd_send_butn">
+            </div>
+            <div id="feed_container">
+                <table id="feed">
+                    <tr>
+                        <tc>symbol<tc>
+                        <tc>message<tc>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </body>
+</html>

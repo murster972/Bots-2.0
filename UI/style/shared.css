@@ -1,0 +1,128 @@
+/* styles shared by multiple pages */
+
+@font-face {
+    font-family: "Righteous";
+    src: url("Righteous-Regular.ttf");
+}
+
+* {
+    background-color: #393E53;
+    margin: 0;
+}
+
+p, h1, h2, input[type="text"], input[type="button"] {
+    font-family: Righteous;
+    font-weight: lighter;
+    color: #fff;
+}
+
+#sep_bar{
+    width: 770px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #5F647C;
+    margin-top: 5px;
+}
+
+.status.good {
+    color: #27AE60;
+}
+
+.status.okay {
+    color: #FF6F4B;
+}
+
+.status.bad {
+    color: #D14C4C;
+}
+
+/* resource circle */
+.resource_circle {
+    width: 180px;
+    height: 180px;
+}
+
+.outer_circle, .inner_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+/* https://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css/ */
+.outer_circle {
+    width: 180px;
+    height: 180px;
+    background-color: #5F647C;
+    /* background-image: linear-gradient(to right, transparent 50%, #FF6F4B 0); */
+}
+
+.outer_circle::before {
+    content: '';
+      display: flex;
+      margin-left: 50%;
+      width: 50%;
+      height: 100%;
+      border-radius: 0 100% 100% 0 / 50%;
+      background-color: inherit;
+      transform-origin: left;
+      /* transform: rotate(.5turn); */
+}
+
+.inner_circle {
+    width: 130px;
+    height: 130px;
+    flex-direction: column;
+    position: absolute;
+}
+
+/* inputs */
+input[type="text"], input[type="button"] {
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+}
+
+.text_input {
+    width: auto;
+    height: 30px;
+    display: flex;
+}
+
+input[type="text"] {
+    width: 90%;
+    background-color: #fff;
+    color: #000;
+}
+
+input[type="text"]::placeholder {
+    color: #BDBDBD;
+}
+
+.text_input_butn {
+    width: 10%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Righteous;
+    font-size: 18px;
+}
+
+.text_input_butn.down {
+    font-size: 30px;
+}
+
+.down_arrow {
+    background: inherit;
+    transform: rotate(90deg);
+}
+
+input[type="button"] {
+    border-radius: 50px;
+}
