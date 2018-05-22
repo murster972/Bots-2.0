@@ -2,25 +2,61 @@
 
 @font-face {
     font-family: "Righteous";
-    src: url("Righteous-Regular.ttf");
+    src: url("fonts/Righteous-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("fonts/Quicksand-Regular.ttf");
 }
 
 * {
-    background-color: #393E53;
     margin: 0;
 }
 
-p, h1, h2, input[type="text"], input[type="button"] {
-    font-family: Righteous;
-    font-weight: lighter;
-    color: #fff;
+:root {
+    --main-bg-color: #393E53;
+    --secnd-bg-color-1: #5F647C;
+    --secnd-bg-color-2: #1E2643;
+
+    --fg-color-1: #fff;
+    --fg-color-2: #393E53;
+
+    /* purplish */
+    /* --main-bg-color: #433b81;
+    --secnd-bg-color-1: #5951a1;
+    --secnd-bg-color-2: #231A69; */
 }
 
-#sep_bar{
+body {
+    background-color: var(--main-bg-color);
+    padding-bottom: 20px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+p, h1, h2, h3, input[type="text"], input[type="button"], li {
+    font-family: Righteous;
+    font-weight: lighter;
+    color: var(--fg-color-1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.left_arrow {
+    transform: rotate(180deg);
+    margin-right: 2px;
+}
+
+.sep_bar{
     width: 770px;
     height: 3px;
     margin: 0 auto;
-    background-color: #5F647C;
+    background-color: var(--secnd-bg-color-1);
     margin-top: 5px;
 }
 
@@ -52,19 +88,19 @@ p, h1, h2, input[type="text"], input[type="button"] {
 .outer_circle {
     width: 180px;
     height: 180px;
-    background-color: #5F647C;
+    background-color: var(--secnd-bg-color-1);
     /* background-image: linear-gradient(to right, transparent 50%, #FF6F4B 0); */
 }
 
 .outer_circle::before {
     content: '';
-      display: flex;
-      margin-left: 50%;
-      width: 50%;
-      height: 100%;
-      border-radius: 0 100% 100% 0 / 50%;
-      background-color: inherit;
-      transform-origin: left;
+    display: flex;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 100% 100% 0 / 50%;
+    background-color: inherit;
+    transform-origin: left;
       /* transform: rotate(.5turn); */
 }
 
@@ -73,6 +109,7 @@ p, h1, h2, input[type="text"], input[type="button"] {
     height: 130px;
     flex-direction: column;
     position: absolute;
+    background-color: var(--main-bg-color);
 }
 
 /* inputs */
@@ -106,12 +143,13 @@ input[type="text"]::placeholder {
     width: 10%;
     height: 100%;
     background: #000;
-    color: #fff;
+    color: var(--fg-color-1);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Righteous;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .text_input_butn.down {
@@ -121,8 +159,14 @@ input[type="text"]::placeholder {
 .down_arrow {
     background: inherit;
     transform: rotate(90deg);
+    transition: 1s;
+}
+
+.text_input_butn.down_arrow.hover {
+    transform: rotate(100deg);
 }
 
 input[type="button"] {
     border-radius: 50px;
+    cursor: pointer;
 }

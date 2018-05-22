@@ -1,0 +1,226 @@
+/* styles used by bot pages */
+
+/* top section */
+#top_section {
+    width: 750px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#top_section h1 {
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#top_section h2 {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+#top_section div {
+    width: 50%;
+    height: auto;
+}
+
+#top_section input[type="button"] {
+    width: 100%;
+    height: 35px;
+}
+
+#top_section #client_discon {
+    background-color: #D14C4C;
+    margin-top: 10px;
+}
+
+#client_recon {
+    height: calc(40px - 4px);
+    background: none;
+    border: 2px solid #fff;
+    margin-top: 10px;
+}
+
+#client_status {
+    display: flex;
+    justify-content: center;
+}
+
+#client_status h2 {
+    align-self: center;
+}
+
+/* resource section */
+#resource_sect {
+    width: 800px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+#resource_sect, #cpu_usage, #bot_ram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cpu_usage {
+    width: auto;
+    height: 100%;
+    padding: 0 10px 0 10px;
+}
+
+.outer_circle.one, .outer_circle.two, .outer_circle.three {
+    position: absolute;
+    border: 1px solid var(--main-bg-color);
+}
+
+.outer_circle.one, .outer_circle.two, .outer_circle.three, .outer_circle.four {
+    background-image: linear-gradient(to right, transparent 50%, #FF6F4B 0);
+}
+
+.outer_circle.four {
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+}
+
+.outer_circle.three {
+    width: 220px;
+    height: 220px;
+    z-index: 2;
+}
+
+.outer_circle.two {
+    width: 190px;
+    height: 190px;
+    z-index: 3;
+}
+
+.outer_circle.one {
+    width: 160px;
+    height: 160px;
+    z-index: 4;
+}
+
+.inner_circle.cpu_usage {
+    z-index: 5;
+}
+
+.outer_circle.four::before {
+    transform: rotate(.4turn);
+}
+
+.outer_circle.three::before {
+    transform: rotate(.33turn);
+}
+
+.outer_circle.two::before {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 100%;
+    background: #FF6F4B;
+    /* transform: rotate(.turn); */
+}
+
+.outer_circle.one::before {
+    transform: rotate(.8turn);
+}
+
+#bot_ram {
+    width: auto;
+    height: 100%;
+    padding: 0 10px 0 10px;
+}
+
+#network_speeds {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#network_speeds h2 {
+    transform: rotate(-90deg);
+    position: absolute;
+}
+
+#download_txt {
+    width: 115px;
+    margin-left: -33px;
+}
+
+#upload_txt {
+    width: 80px;
+    margin-left: 105px;
+}
+
+#network_speeds .bar {
+    width: 80px;
+    height: 150px;
+    background: var(--secnd-bg-color-1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#network_speeds .bar h3 {
+    position: absolute;
+    z-index: 2;
+}
+
+#network_speeds .bar.download {
+    margin-left: 40px;
+}
+
+#network_speeds .bar.upload {
+    margin-left: 40px;
+}
+
+/* status bar for upload/download speed */
+#network_speeds .bar:before {
+    content: '';
+    width: 80px;
+    /* height: 100px; */
+    background: #219653;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+}
+
+#network_speeds .bar.download:before {
+    height: 80px;
+}
+
+#network_speeds .bar.upload:before {
+    height: 20px;
+}
+
+/* command section */
+#cmd_section {
+    width: 750px;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+#cmd_input, #send_cmd_butn {
+    width: calc(50% - 5px);
+    height: 35px;
+    margin-top: 10px;
+}
+
+#cmd_input input, #cmd_input div {
+    height: 35px;
+}
+
+#send_cmd_butn {
+    margin-left: 10px;
+    background-color: #000;
+}

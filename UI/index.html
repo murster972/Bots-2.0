@@ -36,7 +36,7 @@
             </div>
         </div>
         </section>
-        <div id="sep_bar"></div>
+        <div class="sep_bar"></div>
         <section id="commands_and_feed">
             <div id="inputs">
                 <div class="text_input" id="cmd_input">
@@ -56,12 +56,96 @@
                 <input type="button" value="Send Command" id="cmd_send_butn">
             </div>
             <div id="feed_container">
-                <table id="feed">
-                    <tr>
-                        <tc>symbol<tc>
-                        <tc>message<tc>
-                    </tr>
-                </table>
+                <div class="feed">
+                    <div class="f_symbol_cont">
+                        <div class="f_symbol error">!</div>
+                    </div>
+                    <div class="f_cont">
+                        <h2>Unable to connect to database</h2>
+                    </div>
+                    <div class="f_sep"></div>
+                </div>
+                <div class="feed">
+                    <div class="f_symbol_cont">
+                        <div class="f_symbol success">✓</div>
+                    </div>
+                    <div class="f_cont">
+                        <h2>Bot Added: MAC - 12:34:AD:CB:12:34, IP - 10.10.10.1, Port - 9090 </h2>
+                    </div>
+                    <div class="f_sep"></div>
+                </div>
+                <div class="feed">
+                    <div class="f_symbol_cont">
+                        <div class="f_symbol info">?</div>
+                    </div>
+                    <div class="f_cont">
+                        <h2>Results Available for command “show /media”</h2>
+                    </div>
+                    <div class="f_sep"></div>
+                </div>
+                <div class="feed">
+                    <div class="f_symbol_cont">
+                        <div class="f_symbol info">?</div>
+                    </div>
+                    <div class="f_cont">
+                        <h2>Results Available for command “python3 amazingRace.py ste...</h2>
+                    </div>
+                    <div class="f_sep"></div>
+                </div>
+                <div class="feed">
+                    <div class="f_symbol_cont">
+                        <div class="f_symbol error">!</div>
+                    </div>
+                    <div class="f_cont">
+                        <h2>Failed to send command to Bot ID - AD:FF:00:11:83:12</h2>
+                    </div>
+                    <div class="f_sep last"></div>
+                </div>
+            </div>
+        </section>
+        <section id="bot_info">
+            <h1>Bot Information</h1>
+            <div class="bot">
+                <h2 class="mac">MAC: 88:88:88:88:88:88</h2>
+                <h2 class="name">Name: The Office PC - 1</h2>
+                <div class="b_open">
+                    <div class="symbol">+</div>
+                </div>
+            </div>
+            <div class="bot">
+                <h2 class="mac">MAC: 88:88:88:88:88:88</h2>
+                <h2 class="name">Name: NAS (Ubuntu)</h2>
+                <div class="b_open">
+                    <div class="symbol">+</div>
+                </div>
+            </div>
+            <div class="bot">
+                <h2 class="mac">MAC: 88:88:88:88:88:88</h2>
+                <h2 class="name">Name: Server Room A12</h2>
+                <div class="b_open">
+                    <div class="symbol">+</div>
+                </div>
+            </div>
+            <div class="bot">
+                <h2 class="mac">MAC: 88:88:88:88:88:88</h2>
+                <h2 class="name">Name: The Office PC - 1</h2>
+                <div class="b_open">
+                    <div class="symbol">+</div>
+                </div>
+            </div>
+            <div class="bot">
+                <h2 class="mac">MAC: 88:88:88:88:88:88</h2>
+                <h2 class="name">Name: Downstairs Office Desktop (Windows)</h2>
+                <div class="b_open">
+                    <div class="symbol">+</div>
+                </div>
+            </div>
+            <div class="bot last">
+                <h2 class="mac">MAC: 88:88:88:88:88:88</h2>
+                <h2 class="name">Name: Custom Router (Attic)</h2>
+                <div class="b_open">
+                    <div class="symbol">+</div>
+                </div>
             </div>
         </section>
     </body>

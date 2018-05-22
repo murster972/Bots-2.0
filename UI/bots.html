@@ -4,8 +4,81 @@
         <meta charset="utf-8">
         <title>Bot - ID1234</title>
         <link rel="stylesheet" type="text/css" href="style/shared.css">
+        <link rel="stylesheet" type="text/css" href="style/bot_menu.css">
+        <link rel="stylesheet" type="text/css" href="style/bot_overview.css">
     </head>
     <body>
-
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li class="back_nav" title="MasterBot Overview"><span class="left_arrow">></span></li>
+                </a>
+                <li class="bot_nav active">Overview</li>
+                <li class="bot_nav">Resources</li>
+                <li class="bot_nav">Peripherals</li>
+                <li class="bot_nav">Shitz & Giggles</li>
+            </ul>
+        </nav>
+        <section id="top_section">
+            <h1>Office PC-1 Information</h1>
+            <div>
+                <h2>Port: 1207</h2>
+                <h2>IP: 000.000.000.000</h2>
+                <h2>MAC: BB:BB:BB:BB:BB:BB</h2>
+            </div>
+            <div>
+                <input type="button" name="" value="Disconnect" id="client_discon">
+                <input type="button" name="" value="Reset Client" id="client_recon">
+            </div>
+            <div>
+                <h2>OS: Ubuntu 17.10 LTS</h2>
+            </div>
+            <div id="client_status">
+                <h2>Status: <span class="status good">Active - 2m 3s</span></h2>
+            </div>
+        </section>
+        <div class="sep_bar"></div>
+        <section id="resource_sect">
+            <div class="resource_circle" id="cpu_usage">
+                <div class="outer_circle four">
+                    <div class="outer_circle three">
+                        <div class="outer_circle two">
+                            <div class="outer_circle one">
+                                <div class="inner_circle cpu_usage">
+                                    <h1>CPU</h1>
+                                    <h2><span class="status okay">50%</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resource_circle" id="bot_ram">
+                <div class="outer_circle" id="ram">
+                    <div class="inner_circle">
+                        <h1>RAM</h1>
+                        <h2><span class="status good">20%</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div id="network_speeds">
+                <h2 id="download_txt">Download</h2>
+                <div class="bar download">
+                    <h3>888Mb</h3>
+                </div>
+                <h2 id="upload_txt">Upload</h2>
+                <div class="bar upload">
+                    <h3>888Mb</h3>
+                </div>
+            </div>
+        </section>
+        <div class="sep_bar"></div>
+        <section id="cmd_section">
+            <div class="text_input" id="cmd_input">
+                <input type="text" placeholder="Command" spellcheck="false">
+                <div class="text_input_butn">X</div>
+            </div>
+            <input type="button" value="Send Command" id="send_cmd_butn">
+        </section>
     </body>
 </html>
