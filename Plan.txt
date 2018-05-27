@@ -6,6 +6,11 @@
          - have a SINGLE thread then contstantly checking the stack for new content
            and upload to the database
          - saves a shit
+    - vuln scanner (exploits)
+         - able to scan for machines on their network for vulnr
+            - report these to the masterbot
+            - (at the masterbot request) compromise said machine through
+              these vuln, dl and run the bot on it and connect it to the masterbot
 
 2. masterbot
     - Listen and connect to clients

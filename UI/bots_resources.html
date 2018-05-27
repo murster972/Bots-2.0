@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bot: ID1234 - Resources</title>
+        <link rel="stylesheet" type="text/css" href="style/shared.css">
+        <link rel="stylesheet" type="text/css" href="style/bot_menu.css">
+        <link rel="stylesheet" type="text/css" href="style/bot_resources.css">
+        <script src="scripts/resources/p5.min.js" charset="utf-8"></script>
+        <script src="scripts/line_graph.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li class="back_nav" title="MasterBot Overview"><span class="left_arrow">></span></li>
+                </a>
+                <li class="bot_nav">Overview</li>
+                <li class="bot_nav active">Resources</li>
+                <li class="bot_nav">Peripherals</li>
+                <li class="bot_nav">Shitz & Giggles</li>
+            </ul>
+        </nav>
+        <section id="cpu_mem_swap_sect">
+            <div class="resource_circle" id="cpu_usage">
+                <div class="outer_circle four">
+                    <div class="outer_circle three">
+                        <div class="outer_circle two">
+                            <div class="outer_circle one">
+                                <div class="inner_circle cpu_usage">
+                                    <h1>CPU</h1>
+                                    <h2><span class="status okay">50%</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resource_circle" id="bot_ram">
+                <div class="outer_circle" id="ram">
+                    <div class="inner_circle">
+                        <h1>RAM</h1>
+                        <h2><span class="status good">20%</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="resource_circle" id="bot_mem">
+                <div class="outer_circle" id="ram">
+                    <div class="inner_circle">
+                        <h1>SWAP</h1>
+                        <h2><span class="status good">20%</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div id="details">
+
+                <h2 class="left">CPU: Intel I5 4590 2.4Ghz</h2>
+                <h2 class="right">RAM: 3.40 of 64GB</h2>
+                <h2 id="cores">Cores: </h2>
+                <h2 id="cores_perct">1 (25%), 2 (50%), 3 (65%), 4 (20%), 5 (10%), 6 (0%) </h2>
+                <h2 class="right">SWAP: 0 of 32.5GB</h2>
+            </div>
+        </section>
+        <div class="sep_bar"></div>
+        <section id="network_section">
+            <h1 id="title">Network</h1>
+            <div id="buffer"></div>
+            <div class="speed_circles">
+                <div class="outer" id="download_speed">
+                    <div class="square"></div>
+                    <div class="inner">
+                        <h2>200Mbps</h2>
+                        <h1>Download</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="speed_circles">
+                <div class="outer" id="upload_speed">
+                    <div class="square"></div>
+                    <div class="inner">
+                        <h2>20Mbps</h2>
+                        <h1>Upload</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="network_info">
+                <h2>Incoming Packets: 20,002</h2>
+                <h2>Outgoing Packers: 100</h2>
+                <h2>Incoming Total: 52.3GB</h2>
+                <h2>Outgoing Total: 11.9GB</h2>
+            </div>
+            <h1 id="traffic_hist">Traffic History</h1>
+            <div id="network_hist_graph">
+                <!--NOTE: Draw graph in css and only line in js to ease load on cpu and gpu? */
+            </div>
+        </section>
+    </body>
+</html>

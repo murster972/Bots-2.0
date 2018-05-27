@@ -94,7 +94,7 @@ a {
 
 .outer_circle::before {
     content: '';
-    display: flex;
+    display: block;
     margin-left: 50%;
     width: 50%;
     height: 100%;
