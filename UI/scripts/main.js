@@ -10,16 +10,16 @@ function setup(){
     // refresh the canvas once per second as oppose to 30 times per second
     frameRate(1);
 
-    this.graph.add_point("o", 10);
-    this.graph.add_point("i", 500);
+    graph.add_point("o", 1000);
+    graph.add_point("i", 150);
 }
 
 function draw(){
     background("#393E53");
     graph.draw();
 
-    this.graph.add_point("o", getRandomInt(0, 300));
-    this.graph.add_point("i", getRandomInt(100, 600));
+    graph.add_point("o", getRandomInt(0, 100));
+    graph.add_point("i", getRandomInt(100, 150));
 }
 
 

@@ -1,3 +1,5 @@
+//TODO: change update_max so max value is decreased when if max point moves off the screen
+
 class lineGraph{
     constructor(){
         this.points = {o: [], i: []};
@@ -101,6 +103,8 @@ class lineGraph{
 
     /* moves points and removes if not on graph any more */
     update_points(){
+        let max_p = 0;
+
         for(var i = this.points.o.length - 1; i >= 0; i--){
             let incoming = this.points.i[i];
             let outgoing = this.points.o[i];
@@ -108,12 +112,18 @@ class lineGraph{
             outgoing.update(this.spacing, this.incr);
             incoming.update(this.spacing, this.incr);
 
+            max_p = (outgoing.ammount > max_p) ? outgoing.ammount : max_p;
+            max_p = (incoming.ammount > max_p) ? incoming.ammount : max_p;
+
             outgoing.max_ammount = this.max_ammount;
             incoming.max_ammount = this.max_ammount;
 
             if(outgoing.delete == true) this.remove_point(i, "o");
             if(incoming.delete == true) this.remove_point(i, "i");
         }
+
+        if(max_p != this.max_ammount) this.update_max(max_p);
+
     }
 
      /* removes point at index ind from incoming or outgin points */
