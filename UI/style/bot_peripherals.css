@@ -1,0 +1,123 @@
+/* styles used for the bot peripherals page */
+.sep_bar {
+    width: 800px;
+}
+
+
+/* monitor section */
+#monitor_section {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+#monitor_section, h1.title, #monitor_window {
+    display: flex;
+    justify-content: center;
+}
+
+h1.title {
+    height: 40px;
+    font-size: 30px;
+    background: #fff;
+    color: var(--main-bg-color);
+    padding: 0 15px 0 15px;
+}
+
+.filler {
+    width: calc(600px);
+}
+
+#monitor_window {
+    width: 100%;
+    height: 421px;
+    background: blue;
+    margin-top: 10px;
+    align-items: center;
+    background-color: var(--secnd-bg-color-1);
+}
+
+#monitor_window .hidden {
+    display: none;
+}
+
+#monitor_window .buttons {
+    position: absolute;
+    margin-top: calc((421px - 50px - 15px) / 2 * -1);
+}
+
+#monitor_window .buttons.arrow {
+    width: 50px;
+    height: 50px;
+    background: #000;
+    border-radius: 50%;
+    background-color: #000;
+    margin-left: calc((800px - 30px - 50px - 40px - 15px) / 2);
+}
+
+#monitor_window .buttons.zoom {
+    width: 30px;
+    height: 50px;
+    background: #000;
+    margin-left: calc((800px - 30px - 15px) / 2);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#monitor_window h2 {
+    color: var(--main-bg-color);
+}
+
+#monitor_window img.active {
+    width: 100%;
+    height: 100%;
+}
+
+#capture_screen, #capture_screen_off {
+    height: 40px;
+    margin-top: 10px;
+}
+
+#capture_screen {
+    width: 630px;
+    background-color: #000;
+    color: #fff;
+}
+
+#capture_screen_off {
+    width: 160px;
+    margin-left: 10px;
+    background-color: var(--secnd-bg-color-1);
+    color: var(--main-bg-color);
+}
+
+#file_butn {
+    width: 150px;
+    border-radius: 0;
+    margin-top: 15px;
+    background-color: var(--secnd-bg-color-2);
+}
+
+h2.time {
+    height: 40px;
+    margin-top: 16px;
+    font-size: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* keyboard section */
+#keyboard_section {
+    width: 750px;
+    height: 200px;
+    background: red;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
