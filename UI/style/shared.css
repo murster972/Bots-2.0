@@ -36,7 +36,7 @@ ul, li {
     list-style: none;
 }
 
-p, h1, h2, h3, input[type="text"], input[type="button"], li {
+p, h1, h2, h3, input[type="text"], input[type="button"], li, textarea {
     font-family: Righteous;
     font-weight: lighter;
     color: var(--fg-color-1);
