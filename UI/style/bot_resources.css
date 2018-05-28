@@ -232,6 +232,50 @@
 #network_hist_graph {
     width: 720px;
     height: 330px;
-    background: red;
     margin-top: 5px;
+}
+
+/* storage sect */
+#storage_sect {
+    width: 100%;
+    height: auto;
+    background-color: var(--secnd-bg-color-2);
+}
+
+#storage_sect {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#storage_sect h1 {
+    background-color: #fff;
+    height: 32px;
+    color: var(--secnd-bg-color-2);
+    margin-top: 10px;
+    padding: 5px 15px 5px 15px;
+    float: left;
+}
+
+#storage_sect #refresh {
+    background-color: #000;
+    color: #fff;
+    height: 35px;
+    padding: 5px 20px 5px 20px;
+    margin-top: 13.5px;
+    margin-left: 10px;
+}
+
+#storage_sect #filler {
+    width: 500px;
+    height: 30px;
+}
+
+#storage_devices {
+    width: 760px;
+    height: 200px;
+    background: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

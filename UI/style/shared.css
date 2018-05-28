@@ -30,7 +30,6 @@
 
 body {
     background-color: var(--main-bg-color);
-    padding-bottom: 20px;
 }
 
 ul, li {

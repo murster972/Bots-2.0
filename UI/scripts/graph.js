@@ -26,6 +26,24 @@ class lineGraph{
         this.draw_line("o");
         this.draw_line("i");
         this.draw_points();
+
+        this.draw_key();
+    }
+
+    draw_key(){
+        noStroke()
+        fill("#EB5757")
+        rect(10, 10, 15, 15);
+
+        fill("#2F80ED");
+        rect(10, 35, 15, 15);
+
+        fill("#fff")
+        textSize(15);
+        text("Outgoing", 30, 22);
+
+        text("Incoming", 30, 47);
+
     }
 
     draw_axes(){
@@ -78,8 +96,10 @@ class lineGraph{
 
         for(let i = 0; i < this.points.o.length; i++){
             let tmp = (in_out == "o" ? this.points.o[i].pos : this.points.i[i].pos);
+
             vertex(tmp.x, tmp.y);
         }
+
 
         endShape();
     }
@@ -121,7 +141,6 @@ class lineGraph{
         }
 
         if(max_p != this.max_ammount) this.update_max(max_p);
-
     }
 
      /* removes point at index ind from incoming or outgin points */
