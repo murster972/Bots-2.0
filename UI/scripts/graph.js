@@ -1,5 +1,3 @@
-//TODO: change update_max so max value is decreased when if max point moves off the screen
-
 class lineGraph{
     constructor(){
         this.points = {o: [], i: []};
