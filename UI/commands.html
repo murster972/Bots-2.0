@@ -4,8 +4,61 @@
         <meta charset="utf-8">
         <title>Command History</title>
         <link rel="stylesheet" type="text/css" href="style/shared.css">
+        <link rel="stylesheet" type="text/css" href="style/command_history.css">
+
     </head>
     <body>
-        
+        <section id="cmd_search_sect">
+            <h1 class="title">Command History</h1>
+            <div class="text_input" id="cmd_search">
+                <div class="text_input_butn">X</div>
+                <input type="text" placeholder="Command" spellcheck="false">
+            </div>
+        </section>
+        <section id="cmd_history_sect">
+            <div id="table">
+                <h2 class="id">ID - 8888</h2>
+                <h2 class="cmd">Command - ls -l /usr/share | grep “elp...</h2>
+                <div class="drop_butn">
+                    <span>></span>
+                </div>
+                <div class="drop_down">
+                    <h3 class="heading">Command</h3>
+                    <h3 class="data">ls -l /usr/share | grep “elp me"</h3>
+                    <div class="sep_bar"></div>
+                    <h3 class="heading">Creatio Time</h3>
+                    <h3 class="data">12:15PM</h3>
+                    <div class="sep_bar"></div>
+                    <h3 class="heading">Bots</h3>
+                    <div class="data related_bots">
+                        <h4>12:34:56:78:9a:bd</h4>
+                        <h4>12:34:56:78:9a:bd</h4>
+                        <h4>12:34:56:78:9a:bd</h4>
+                        <h4>12:34:56:78:9a:bd</h4>
+                        <h4>12:34:56:78:9a:bd</h4>
+                    </div>
+                    <div class="sep_bar"></div>
+                    <input type="button" name="" value="Delete" id="delete">
+                </div>
+                <div class="sep_bar"></div>
+                <h2 class="id">ID - 8888</h2>
+                <h2 class="cmd">Command - ls -l /usr/share | grep “elp...</h2>
+                <div class="drop_butn">
+                    <span>></span>
+                </div>
+                <div class="sep_bar"></div>
+                <h2 class="id">ID - 8888</h2>
+                <h2 class="cmd">Command - ls -l /usr/share | grep “elp...</h2>
+                <div class="drop_butn">
+                    <span>></span>
+                </div>
+                <div class="sep_bar"></div>
+                <h2 class="id">ID - 8888</h2>
+                <h2 class="cmd">Command - ls -l /usr/share | grep “elp...</h2>
+                <div class="drop_butn">
+                    <span>></span>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

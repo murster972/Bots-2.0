@@ -1,0 +1,39 @@
+/* styles used in command history page */
+h1.title {
+    height: 40px;
+    font-size: 30px;
+    background: #fff;
+    color: var(--main-bg-color);
+    padding: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* command search section */
+#cmd_search_sect {
+    width: 750px;
+    height: auto;
+    background: red;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cmd_search {
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+/* command history section */
+#cmd_history_sect #delete {
+    width: 150px;
+    background: #D14C4C;
+    margin-left: 20px;
+    margin: 5px 0 5px 20px;
+    font-size: 15px;
+    font-family: Quicksand;
+    font-weight: bolder;
+}
