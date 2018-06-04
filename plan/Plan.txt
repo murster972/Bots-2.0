@@ -50,6 +50,7 @@
 ---Masters---
 Protocol for finding Clients:
 
+
 ---Client---
 Protocol for connecting to master:
 
